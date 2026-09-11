@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AM explorer</title>
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="am-explorer-logo-removebg-preview.png" alt="Logo">
+            </div>
+            <h1>Explore the world <i class="fa-solid fa-earth-americas"></i></h1>
+        </div>
+    </header>
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#search-section">Search</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#footer">Footer</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="search-section" id="search-section">
+        <div class="container">
+            <input type="text" id="searchInput" placeholder="Search for a country...">
+            <button id="search-button">Search</button>
+            <div class="options">
+             <h2>Recommended...</h2>
+                <ul id="optionsList">
+                 <li class="option">Option 1</li>
+                 <li class="option">Option 2</li>
+                 <li class="option">Option 3</li>
+                 <li class="option">Option 4</li>
+                 <li class="option">Option 5</li>
+                 <li class="option">Option 6</li>
+                </ul>
+                <button id="reload"><i class="fa-solid fa-arrows-rotate"></i></button>
+            </div>
+        </div>
+    </div>
+    <div class="detailsSection">
+        <div class="container">
+            <div class="header">
+                <div class="containerFlag">
+                    <img src="" class="flag">
+                </div>
+                <div class="details">
+                <div>Selected country :<span id="spanName"></span></div>
+                    <div id="connent">القارة</div>
+                </div>
+            </div>
+            <div class="bodydetails">
+                <div class="card">
+                    <h2>population</h2>
+                    <p>bla bla</p></div>
+                <div class="card">
+                    <h2>population</h2>
+                    <p>bla bla</p></div>
+                <div class="card">
+                    <h2>population</h2>
+                    <p>bla bla</p></div>
+                <div class="card">
+                    <h2>population</h2>
+                    <p>bla bla</p></div>
+                    
+            </div>
+            <div class="containerCanvas">
+                <canvas id="myChart"></canvas>
+            </div>
+            
+            <div class="containerMap">
+                <h2>The location</h2>
+                <div id="map"></div>
+            </div>
+        </div>
+    </div>
+    <div class="about" id="about">
+     <div class="container">
+         <div class="headerAbout">
+          <h2>About us</h2>
+          <div class="containerLogoAbout">
+        <img src="am-explorer-logo-removebg-preview.png" alt="logo">
+          </div>
+         </div>
+         <ul>
+            <li>
+                <span>Who We Are </span>:  A simple platform for exploring countries and discovering useful information about them.ho We Are: A simple platform for exploring countries and discovering useful information about them.</li>
+            <li><span> Our idea of website</span> : We created AM Explorer to make exploring the world easier, faster, and more enjoyable</li>
+            <li><span>What We Offer</span> : Explore countries, compare their statistics, discover interesting facts, and view their locations on the map</li>
+            <li><span>What's Next</span>: We aim to keep improving AM Explorer by adding more features and making your experience ever better.</li>
+         </ul>
+     </div>
+    </div>
+    <footer id="footer">
+        <div class="container">
+      <div class="headerFooter">
+        <div class="containerLogo">
+            <img src="am-explorer-logo-removebg-preview.png" alt="logo">
+            <h2><i>Together bulid impossible</i></h2>
+        </div>
+      </div>
+      <div class="linksFooter">
+        <h3>Contact with us</h3>
+        <ul>
+    <li class="facebook"><a href=""><i class="fa-brands fa-facebook-f"></i> Facebook</a></li>
+    <li class="whatsapp"><a href=""><i class="fa-brands fa-whatsapp"></i> WhatsApp</a></li>
+    <li class="meessanger"><a href=""><i class="fa-brands fa-facebook-messenger"></i> Messenger</a></li>
+    <li class="linkedin"><a href=""><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a></li>
+</ul>
+      </div>
+      <div class="copy">© 2026 AM Explorer — Explore the world, one country at a time !</div>
+        </div>
+    </footer>
+    <div class="falsInput">
+        <h3 >False input!</h3>
+        <p id="pMsg">jvabjfbjiafbfljkasfblkjabf</p>
+        <p>Please, try again</p>
+    </div>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="logic.js">
+    </script>
+</body>
+</html>
